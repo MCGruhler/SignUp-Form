@@ -1,0 +1,165 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bodyDoc{
+    display: flex;
+    flex-flow: row nowrap;
+    
+    height: 100vh;
+}
+
+.imgBack{
+    width: 35vw;
+    background-image: url(odin_sign-up.avif);
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.imgBack .imgOdin{
+    height: 20vh;
+    width: 30%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .4;
+
+    border-radius: 5px;
+}
+
+.imgOdin img{
+    height: 18vh;
+}
+
+.sign-up{
+    width: 65vw;
+    background-color: 	#353935;
+
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+}
+
+.sign-up{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+h3,
+input,
+label,
+legend,
+h4{
+    margin: 0 50px;
+}
+
+
+ul{
+    list-style: none;
+
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+
+li{
+    position: relative;
+    margin: 25px 0;
+
+    width: 40%;
+}
+
+label{
+    position: absolute;
+    top: -17px;
+    
+}
+
+fieldset{
+    position: relative;
+
+    margin: 15px;
+
+    border: 0;
+
+    box-shadow: #3f9997 0px 5px 5px, #3f9997 0px -12px 30px, #3f9997 0px 4px 6px, #3f9997 0px 12px 13px, #3f9997 0px -3px 5px;
+
+}
+
+legend{
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+li:first-of-type,
+li:nth-of-type(2){
+    margin-top: 60px;
+}
+
+button{
+    color: white;
+    background: #3f9997;
+    width: 150px;
+    margin: 15px 65px;
+}
+
+h4 > em{
+    color: #3f9997;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+    body{
+        background-image: url(odin_sign-up.avif);
+        background-position: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .bodyDoc{
+        display: block;
+    }
+
+    .imgBack{
+        background-image: none;
+        width: 0vw;
+    }
+
+    .sign-up{
+        width: 90vw;
+        
+        margin: 5% 5%;
+        
+
+        justify-content: space-evenly;
+        
+    }
+
+    ul{
+        flex-flow: column nowrap;
+    }
+
+    li:nth-of-type(2){
+        margin-top: 25px;
+    }
+}

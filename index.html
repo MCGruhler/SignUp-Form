@@ -24,11 +24,11 @@
                     <legend>Let's do this!</legend>
                     <ul>
                         <li><label for="fName">First Name</label>
-                            <input type="text" name="fName" id="fName" required>
+                            <input type="text" name="fName" id="fName" required pattern="[a-zA-Z]+">
                             <span></span>
                         </li>
                         <li><label for="lName">Last Name</label>
-                            <input type="text" name="lName" id="lName" required>
+                            <input type="text" name="lName" id="lName" required  pattern="[a-zA-Z]+">
                             <span></span>
                         </li>
                         <li><label for="email">Email</label>
@@ -36,7 +36,7 @@
                             <span></span>
                         </li>
                         <li><label for="cell">Phone number</label>
-                            <input type="tel" name="cell" id="cell" required>
+                            <input type="tel" name="cell" id="cell" required pattern="\d{3}\s?.?-?\d{3}\s?.?-?\d{4}\s?.?-?">
                             <span></span>
                         </li>
                         <li><label for="pwd">Password</label>

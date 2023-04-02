@@ -31,7 +31,7 @@
     align-items: center;
     opacity: .4;
 
-    border-radius: 5px;
+    border-radius: 25px;
 }
 
 .imgOdin img{
@@ -53,12 +53,19 @@
     gap: 15px;
 }
 
-h3,
+
 input,
 label,
-legend,
-h4{
+legend{
     margin: 0 50px;
+}
+
+h3{
+    margin-bottom: 60px;
+}
+h3,
+h4{
+    margin-left: 65px;
 }
 
 
@@ -84,6 +91,8 @@ label{
 }
 
 fieldset{
+
+    height: 40vh;
     position: relative;
 
     margin: 15px;
@@ -119,6 +128,73 @@ h4 > em{
 
 
 
+/* Editing the formboxes*/
+label{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input{
+
+    appearance: none;
+
+    background-color: aliceblue;
+
+    width: 250px;
+    height: 30px;
+    position: relative;
+
+    font-weight: bold;
+}
+
+input:required + span::before{
+    position: absolute;
+    content: 'required';
+
+    top: -19px;
+    left: 240px;
+    height: 17px;
+    background-color: black;
+    color: #3f9997;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+input:focus:invalid{
+    outline: 1px solid red;
+    
+}
+
+input:focus:valid{
+    outline: 1px solid green;
+    
+}
+
+input:valid + span::after{
+    position: absolute;
+
+    left: 305px;
+    content: '✓';
+    color: green;
+    font-size: 30px;
+}
+
+#pwd2:invalid + span::after{
+    position: absolute;
+    content: 'passwords must match';
+    
+    top: 35px;
+    left:53px;
+    height: 17px;
+    width: 150px;
+    background-color: black;
+    color: #3f9997;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    font-weight: bold;
+}
 
 
 

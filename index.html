@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -23,17 +24,29 @@
                     <legend>Let's do this!</legend>
                     <ul>
                         <li><label for="fName">First Name</label>
-                            <input type="text" name="fName" id="fName"></li>
+                            <input type="text" name="fName" id="fName" required>
+                            <span></span>
+                        </li>
                         <li><label for="lName">Last Name</label>
-                            <input type="text" name="lName" id="lName"></li>
+                            <input type="text" name="lName" id="lName" required>
+                            <span></span>
+                        </li>
                         <li><label for="email">Email</label>
-                        <input type="email" name="email" id="email"></li>
+                            <input type="email" name="email" id="email" required>
+                            <span></span>
+                        </li>
                         <li><label for="cell">Phone number</label>
-                            <input type="tel" name="cell" id="cell"></li>
+                            <input type="tel" name="cell" id="cell" required>
+                            <span></span>
+                        </li>
                         <li><label for="pwd">Password</label>
-                            <input type="password" name="pwd" id="pwd"></li>
+                            <input type="password" name="pwd" id="pwd1" required onkeyup="checkPwds()">
+                            <span></span>
+                        </li>
                         <li><label for="pwd">Confirm Password</label>
-                            <input type="password" name="pwd" id="pwd"></li>
+                            <input type="password" name="pwd" id="pwd2" required onkeyup="checkPwds()">
+                            <span></span>
+                        </li>
                     </ul>
                 </fieldset>
                 <button type="submit">Create Account</button>
